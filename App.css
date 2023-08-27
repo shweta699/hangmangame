@@ -1,0 +1,76 @@
+/* App.css */
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hangman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.hangman__attempts {
+  width: 80px;
+  height: 15px;
+  background-color: #333;
+  margin-bottom: 1rem;
+}
+
+.hangman__attempts-6 {
+  background-color: transparent;
+}
+
+.hangman__display {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.alphabet {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.alphabet__letter {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  margin: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.alphabet__letter.guessed {
+  background-color: #ccc;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
